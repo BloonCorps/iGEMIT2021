@@ -8,7 +8,7 @@ This is the GitHub page for the MIT iGEM Team Wiki for the 2021 iGEM competition
 | Angela Gao  |  |
 | Emily Gan |  |
 | Sarah Pertsemlidis |  |
-| Sabrina Meng |  |
+| Sabrina Meng | spmeng@mit.edu |
 | Zoe Gotthold|  |
 | Kenneth Wei |  |
 | Jared Zheng |  |
