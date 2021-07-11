@@ -1,6 +1,39 @@
+/* navbar background color */
+.navbar-custom {
+    background-color: #6E352C;
+}
+
+/* navbar text color */
+.navbar-custom, .navbar-text, .navbar-nav, .nav-link {
+    color: #f2edeb;
+}
+
+/* link color on hover */
+.navbar-custom .nav-item:hover .nav-link {
+    color: #8A6E64;
+}
+
+/* for dropdowns only */
+.navbar-custom .navbar-nav .dropdown-menu {
+    background-color: #6E352C;
+}
+
+/* dropdown item text color */
+.navbar-custom .navbar-nav .dropdown-item {
+    color: #f2edeb;
+}
+
+/* dropdown item hover or focus */
+.navbar-custom .navbar-nav .dropdown-item:hover,
+.navbar-custom .navbar-nav .dropdown-item:focus {
+    color: #f2edeb;
+    background-color: #8A6E64;
+}
+
 .navbar-nav > li{
   padding-left:25px;
   padding-right:25px;
+  background-color: #6E352C;
 }
 
 .footer {
@@ -142,6 +175,27 @@ hr {
 
 .wrap {
 	min-width: 1100px;
+    background-color: #bb8e7f;
+}
+
+.footer a {
+    color: #f2edeb;
+}
+
+.footer a:hover {
+    color: #8A6E64;
+}
+
+.footer b {
+    color: #f2edeb;
+}
+
+#footer_container {
+    background-color: #6E352C;
+}
+
+.card {
+    background-color: #f2edeb;
 }
 
 
