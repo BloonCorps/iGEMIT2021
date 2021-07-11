@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+	.tourBoundingBox {
+	    margin: 0 auto;
+	    left: 0;
+	    right: 0;
+	    top: 52px;
+	    text-align: center;
+	    z-index: 9999;
+	}
+	.tourBoundingBoxInner {
+	    height: 66px;
+	    width: 960px;
+	    background: #EEEEEE;
+	    display: inline-block;
+	    padding-top: 5px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.tourBarStart {
+	    background-image: url(http://2014.igem.org/wiki/images/0/04/SDU2014_TourStartBarSelected1.png);
+	}
+	.tourBarCorners {
+	    width: 6px;
+	    float: left;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position-x: center;
+	}
+	.itemLastSelected {
+	    background-image: url(http://2014.igem.org/wiki/images/5/58/SDU2014_LastSelectedPoint1.png);
+	}
+	.parentTourItem {
+	    float: left;
+	    width: auto;
+	    height: 100%;
+	    background-image: url(http://2013.igem.org/wiki/images/d/d7/SDU2013_UnselectedPoint.png);
+	    background-repeat: no-repeat;
+	    background-position: center top;
+	    text-align: center;
+	    padding-top: 22px;
+	    padding-left: 2px;
+	    padding-right: 2px;
+	}
+	.tourItemLabelSelected {
+	    background-color: #3397FE;
+	    color: white;
+	}
+	.tourItemLabel {
+	    margin-left: auto;
+	    margin-right: auto;
+	    background-color: white;
+	    border-color: #B8B8B8;
+	    border-style: solid;
+	    border-width: 1px;
+	    text-align: center;
+	    font-size: 11px;
+	    font-family: Arial;
+	    padding: 0px 4px;
+	    display: inline-block;
+	    text-decoration: none;
+	    color: black;
+	}
+	.expandedTour {
+	    height: 100%;
+	    float: left;
+	}
+	.tourBendLeft {
+	    background-image: url(http://2013.igem.org/wiki/images/e/e5/SDU2013_TourbarBendLeft.png);
+	}
+	.tourBend {
+	    width: 31px;
+	    float: left;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position-x: center;
+	}
+	.expandedTourInner {
+	    padding-top: 17px;
+	    float: left;
+	    width: 480px;
+	    background-repeat: repeat-x;
+	    background-image: url(http://2013.igem.org/wiki/images/9/98/SDU2013_TourBar.png);
+	}
+	.tourBendRight {
+	    background-image: url(http://2013.igem.org/wiki/images/1/16/SDU2013_TourbarBendRight.png);
+	}
+	.tourBend {
+	    width: 31px;
+	    float: left;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position-x: center;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="tourBoundingBox">
+
+	        
+	<div class="tourBoundingBoxInner bannerShadow">
+	        <div class="tourBarCorners tourBarStart"></div>
+	        <div class="parentTourItem  itemLastSelected">
+	            <a class="tourItemLabel tourItemLabelSelected" title="Introduction to this years iGEM project." href="Tour10">
+	                Introduction
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner" style="width: 486px;">
+	                <div class="parentTourItem" style="padding-left: 25.75px; padding-right: 25.75px;">
+	                    <a class="tourItemLabel" title="Get to know the team." href="http://2014.igem.org/Team:SDU-Denmark/Tour11">
+	                        The team
+	                    </a>
+	                </div>
+	                <div class="parentTourItem" style="padding-left: 25.75px; padding-right: 25.75px;">
+	                    <a class="tourItemLabel" title="Pictures from the great iGEM summer." href="http://2014.igem.org/Team:SDU-Denmark/Tour12">
+	                        Gallery
+	                    </a>
+	                </div>
+	                <div class="parentTourItem" style="padding-left: 25.75px; padding-right: 25.75px;">
+	                    <a class="tourItemLabel" title="So much social media this year!" href="http://2014.igem.org/Team:SDU-Denmark/Tour13">
+	                        Social networking
+	                    </a>
+	                </div>
+	                <div class="parentTourItem" style="padding-left: 25.75px; padding-right: 25.75px;">
+	                    <a class="tourItemLabel" title="A big thank you to everyone who helped us." href="http://2014.igem.org/Team:SDU-Denmark/Tour14">
+	                        Attributions
+	                    </a>
+	                </div>
+	                <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+	        <div class="parentTourItem">
+	            <a class="tourItemLabel" title="Explore how our project could change the world." href="Tour20">
+	                Edible coli
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="display:none">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner">
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The world without Edible Coli." href="http://2014.igem.org/Team:SDU-Denmark/Tour21">
+	                        Facts and statistics
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Let's solve the problem." href="http://2014.igem.org/Team:SDU-Denmark/Tour22">
+	                        How can we help?
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="A system designed to save the world." href="http://2014.igem.org/Team:SDU-Denmark/Tour23">
+	                        System design
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The ambitious modelling adventures." href="http://2014.igem.org/Team:SDU-Denmark/Tour24">
+	                        Modelling
+	                    </a>
+	                </div>
+	                <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+
+	        <div class="parentTourItem">
+	            <a class="tourItemLabel" title="Explore how we got from idea to bricks." href="Tour30">
+	                Process
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="display:none">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner">
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Collaborations with the other iGEM teams." href="http://2014.igem.org/Team:SDU-Denmark/Tour31">
+	                        Helping others
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Look at all those sunny days spent in the lab!" href="http://2014.igem.org/Team:SDU-Denmark/Tour32">
+	                        Notebook
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The SOPs that guided us every day in the lab." href="http://2014.igem.org/Team:SDU-Denmark/Tour33">
+	                        SOPs
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Science includes responsibility" href="http://2014.igem.org/Team:SDU-Denmark/Tour34">
+	                        Safety
+	                    </a>
+	                </div>
+	                <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+	        <div class="parentTourItem">
+	            <a class="tourItemLabel" title="The results of a long lab summer." href="Tour40">
+	                Results
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="display:none">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner">
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Expressions." href="http://2014.igem.org/Team:SDU-Denmark/Tour41">
+	                        Expressions
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="More about OneProt." href="http://2014.igem.org/Team:SDU-Denmark/Tour42">
+	                        OneProt
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The production of fatty acids." href="http://2014.igem.org/Team:SDU-Denmark/Tour43">
+	                        Fatty acids
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="From E. Coli to lemon flavor." href="http://2014.igem.org/Team:SDU-Denmark/Tour44">
+	                        Flavor
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="All of our submitted parts." href="http://2014.igem.org/Team:SDU-Denmark/Tour45">
+	                        Submitted parts
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Check list of the judging criteria." href="http://2014.igem.org/Team:SDU-Denmark/Tour46">
+	                        Judging criteria
+	                    </a>
+	                </div>
+	                <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+	<div class="parentTourItem">
+	            <a class="tourItemLabel" title="Looking beyond our own noses." href="Tour50">
+	                Policy and practices
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="display:none">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner">
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The experts comment on our idea." href="http://2014.igem.org/Team:SDU-Denmark/Tour51">
+	                        An expert opinion
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The ethics discussion." href="http://2014.igem.org/Team:SDU-Denmark/Tour52">
+	                        Ethics
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Implementation of our idea." href="http://2014.igem.org/Team:SDU-Denmark/Tour53">
+	                        Business plan
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Letting everyone know about iGEM and our project." href="http://2014.igem.org/Team:SDU-Denmark/Tour54">
+	                        Sharing the message
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Watch our great video adventure! Burger mamma is waiting for you!" href="http://2014.igem.org/Team:SDU-Denmark/Tour55">
+	                        The video adventure
+	                    </a>
+	                </div>
+	                <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+	        <div class="parentTourItem">
+	            <a class="tourItemLabel" title="Now what?" href="Tour60">
+	                Future
+	            </a>
+	        </div>
+	        <div class="expandedTour" style="display:none">
+	            <div class="tourBend tourBendLeft"></div>
+	            <div class="expandedTourInner">
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The next steps for our project." href="http://2014.igem.org/Team:SDU-Denmark/Tour61">
+	                        Next steps
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="Ambitions vs. Reality." href="http://2014.igem.org/Team:SDU-Denmark/Tour62">
+	                        Reality
+	                    </a>
+	                </div>
+	                <div class="parentTourItem">
+	                    <a class="tourItemLabel" title="The end of the tour." href="http://2014.igem.org/Team:SDU-Denmark/Tour63">
+	                        The end
+	                    </a>
+	                </div>
+	              <div style="clear:both;"></div>
+	            </div>
+	            <div class="tourBend tourBendRight"></div>
+	        </div>
+	        <div class="tourBarCorners tourBarEnd"></div>
+	</div>
+
+
+	    </div>
+</body>
+</html>

@@ -32,4 +32,116 @@ hr {
     color: #9A9DA0;
  }
 
+.tourBoundingBox {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 52px;
+    width: 100%;
+    background: #EEEEEE;
+    text-align: center;
+    z-index: 9999;
+}
+
+.tourBoundingBoxInner {
+    height: 100px;
+    width: 1100px;
+    background: #EEEEEE;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tourBarStart {
+    background-image: url("../../images/tour_bar_selected.png");
+}
+
+.tourBarCorners {
+    width: 6px;
+    float: left;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.itemLastSelected {
+    background-image: url("../../images/tour_bar_last_selected.png");
+}
+
+.parentTourItem {
+    float: left;
+    width: auto;
+    height: 100%;
+    background-image: url("../../images/tour_bar_unselected.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    padding-top: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tourItemLabelSelected {
+    background-color: #3397FE;
+    color: white;
+}
+
+.tourItemLabel {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-color: #B8B8B8;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 0px 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.expandedTour {
+    height: 100%;
+    float: left;
+}
+
+.tourBendLeft {
+    background-image: url("../../images/tour_bar_bend_left.png");
+}
+
+.tourBend {
+    width: 31px;
+    float: left;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.expandedTourInner {
+    padding-top: 17px;
+    float: left;
+    background-repeat: repeat-x;
+    background-image: url("../../images/expanded_tour_bar.png");
+}
+
+.tourBendRight {
+    background-image: url("../../images/tour_bar_bend_right.png");
+}
+
+.tourBend {
+    width: 31px;
+    float: left;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.wrap {
+	min-width: 1100px;
+}
+
 
