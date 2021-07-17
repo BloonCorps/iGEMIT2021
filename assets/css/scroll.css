@@ -58,7 +58,7 @@ header.is-visible {
 
 .heading.is-visible {
   opacity: 1;
-  *-webkit-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
@@ -86,15 +86,16 @@ header.is-visible {
 
 #section1 {
   background-color: #e3beb1;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
+  padding-top: 20px;
   font-weight: 300;
 }
 
 #section2 {
   background-color: #e3beb1;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -102,7 +103,7 @@ header.is-visible {
 
 #section3 {
   background-color: #e3beb1;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -110,7 +111,7 @@ header.is-visible {
 
 #section4 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -118,7 +119,7 @@ header.is-visible {
 
 #section5 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -126,7 +127,7 @@ header.is-visible {
 
 #section6 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -134,7 +135,7 @@ header.is-visible {
 
 #section7 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -142,7 +143,7 @@ header.is-visible {
 
 #section8 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
   font-weight: 300;
@@ -150,7 +151,7 @@ header.is-visible {
 
 #section9 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   margin: 10px;
   text-align: center;
   padding: 100px;
@@ -159,7 +160,7 @@ header.is-visible {
 
 #section10 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   margin: 10px;
   text-align: center;
   padding: 100px;
@@ -168,7 +169,7 @@ header.is-visible {
 
 #section11 {
   background-color: #e3beb1;
-  font-size: 40px;
+  font-size: 25px;
   margin: 10px;
   text-align: center;
   padding: 100px;
