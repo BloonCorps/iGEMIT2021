@@ -228,4 +228,7 @@ hr {
     font-weight: 700;
 }
 
+.container{
+    width: calc(100% - 200px);
+}
 
