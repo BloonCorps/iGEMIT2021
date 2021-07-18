@@ -9,132 +9,140 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/sidebar.css">
   <!--javascript for scrollbar is on the bottom of the page-->
 
 </head>
 
 <body>
     <!-- This is the NavBar on top, not to be confused with the NavBar on the side-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-md-3" style="font-size: 16pt">
+    <nav class="navbar navbar-expand-sm navbar-custom py-md-3" style="font-size: 16pt;">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" data-toggle="dropdown">Logo Later</a>
+          <a href="../index.html"><img src="../images/igem_logo_1.png" style="height:70px;"></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Project</a>
+          <a class="nav-link dropdown-toggle">Project</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Description</a>
-            <a class="dropdown-item" href="#">Implementation</a>
-            <a class="dropdown-item" href="#">Contribution</a>
-            <a class="dropdown-item" href="#">Graphic Design</a>
+            <a class="dropdown-item" href="pages/project_description.html">Description</a>
+            <a class="dropdown-item" href="pages/implementation.html">Implementation</a>
+            <a class="dropdown-item" href="pages/contribution.html">Contribution</a>
+            <a class="dropdown-item" href="pages/graphic_design.html">Graphic Design</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Wet Lab</a>
+          <a class="nav-link dropdown-toggle">Wet Lab</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Design</a>
-            <a class="dropdown-item" href="#">Experiments</a>
-            <a class="dropdown-item" href="#">Results</a>
-            <a class="dropdown-item" href="#">Engineering</a>
-            <a class="dropdown-item" href="#">Parts</a>
-            <a class="dropdown-item" href="#">Safety</a>
+            <a class="dropdown-item" href="pages/project_design.html">Design</a>
+            <a class="dropdown-item" href="pages/experiments.html">Experiments</a>
+            <a class="dropdown-item" href="pages/results.html">Results</a>
+            <a class="dropdown-item" href="pages/engineering.html">Engineering</a>
+            <a class="dropdown-item" href="pages/parts.html">Parts</a>
+            <a class="dropdown-item" href="pages/safety.html">Safety</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Dry Lab</a>
+          <a class="nav-link dropdown-toggle">Dry Lab</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Model</a>
-            <a class="dropdown-item" href="#">Software</a>
-            <a class="dropdown-item" href="#">Hardware</a>
-            <a class="dropdown-item" href="#">Measurement</a>
+            <a class="dropdown-item" href="pages/model.html">Model</a>
+            <a class="dropdown-item" href="pages/software.html">Software</a>
+            <a class="dropdown-item" href="pages/hardware.html">Hardware</a>
+            <a class="dropdown-item" href="pages/measurements.html">Measurement</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Human Practices</a>
+          <a class="nav-link dropdown-toggle">Human Practices</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Integrated Human Practices</a>
-            <a class="dropdown-item" href="#">Education & Public Engagement</a>
+            <a class="dropdown-item" href="pages/human_practices.html">Integrated Human Practices</a>
+            <a class="dropdown-item" href="pages/education_engagement.html">Education & Public Engagement</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown">Team</a>
+          <a class="nav-link dropdown-toggle">Team</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Members</a>
-            <a class="dropdown-item" href="#">Collaborators</a>
-            <a class="dropdown-item" href="#">Attributions</a>
+            <a class="dropdown-item" href="pages/team_intro.html">Members</a>
+            <a class="dropdown-item" href="pages/collaborators.html">Collaborators</a>
+            <a class="dropdown-item" href="pages/attributions.html">Attributions</a>
           </div>
         </li>
       </ul>
     </nav>
 
-    <!--side navbar-->
-    <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
-      <ul class="nav flex-column">
-          <li class="nav-item">
-              <a class="nav-link" href="#Subtitle1">Section 1</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#Subtitle2">Section 2</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#Subtitle3">Section 3</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#Subtitle4">Section 4 </a>
-          </li>
-      </ul>
-    </aside>
-
-    <!-- Page content--> 
-    <div id="content" class="container">
-      <br/>
-        <h1 style="font-size: 60pt; padding-bottom: 40px; padding-top: 20px; text-align: left;"> Page Title </h1>
-        <hr>
-        <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 1 </h1>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div>
+      <!-- Page content--> 
+      <div id="content" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+              <!--side navbar-->
+              <div class="sticky-top">
+                <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-left"> 
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#Subtitle1">Section 1</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#Subtitle2">Section 2</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#Subtitle3">Section 3</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#Subtitle4">Section 4 </a>
+                      </li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <h1 style="font-size: 60pt; padding-bottom: 40px; padding-top: 20px; text-align: left;"> Page Title </h1>
+              <hr>
+              <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 1 </h1>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 2 </h1>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <hr>
+            </div>
+          </div>
         </div>
-        <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 2 </h1>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <hr>
 
     <footer class="footer">
       <div id="footer_container">

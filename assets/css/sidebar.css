@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background-color: #f2edeb;
 }
 
 p {
@@ -24,15 +24,36 @@ a:focus {
     transition: all 0.3s;
 }
 
-.navbar {
+.sidenav {
     padding: 15px 10px;
     background: #fff;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #f2edeb;
+    font-size: 15pt;
+    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);*/
 }
 
+.sidenav a {
+    color: gray;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .nav-item {
+    padding: 5px;
+}
+
+/*
+.sticky-top { 
+    top: 200px; 
+}
+*/
+
+/*
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
@@ -45,11 +66,12 @@ a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
+*/
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
+/*
 .wrapper {
     display: flex;
     width: 100%;
@@ -115,6 +137,8 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
+
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -132,17 +156,17 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+*/
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
 #content {
-    width: calc(100% - 250px);
+    width: 100%;
     padding: 40px;
     min-height: 100vh;
     transition: all 0.3s;
-    position: absolute;
     top: 0;
     right: 0;
 }
@@ -155,7 +179,7 @@ ul.CTAs a {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-
+/*
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -173,4 +197,5 @@ ul.CTAs a {
         display: none;
     }
 }
+*/
 
