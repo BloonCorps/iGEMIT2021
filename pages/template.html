@@ -79,25 +79,22 @@
                 <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-left"> 
                   <ul class="nav flex-column">
                       <li class="nav-item">
-                          <a class="nav-link" href="#Subtitle1">Section 1</a>
+                          <a class="nav-link" href="#section1">Section 1</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#Subtitle2">Section 2</a>
+                          <a class="nav-link" href="#section2">Section 2</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#Subtitle3">Section 3</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#Subtitle4">Section 4 </a>
+                          <a class="nav-link" href="#section3">Section 3</a>
                       </li>
                   </ul>
                 </aside>
               </div>
             </div>
             <div class="col-lg-10">
-              <h1 style="font-size: 60pt; padding-bottom: 40px; padding-top: 20px; text-align: left;"> Page Title </h1>
+              <h1 class="section" id = "section1" style="font-size: 60pt; padding-bottom: 40px; padding-top: 20px; text-align: left;"> Page Title </h1>
               <hr>
-              <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 1 </h1>
+              <h1 class="section" id = "section2" style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 1 </h1>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -130,7 +127,7 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </div>
-              <h1 style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 2 </h1>
+              <h1 class="section" id = "section3" style="font-size: 50pt; padding-bottom: 10px; padding-top: 20px; text-align: left;"> Heading 2 </h1>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -254,6 +251,90 @@
             $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         });
     });
+  </script>
+
+  <script>
+    // cache the navigation links 
+    var $navigationLinks = $('div.sticky-top aside.sidenav li.nav-item a');
+    // cache (in reversed order) the sections
+    var $sections = $($(".section").get().reverse());
+
+    // map each section id to their corresponding navigation link
+    var sectionIdTonavigationLink = {};
+    $sections.each(function() {
+        var id = $(this).attr('id');
+        sectionIdTonavigationLink[id] = $('div.sticky-top aside.sidenav li.nav-item a[href=\\#' + id + ']');
+    });
+
+    // throttle function, enforces a minimum time interval
+    function throttle(fn, interval) {
+        var lastCall, timeoutId;
+        return function () {
+            var now = new Date().getTime();
+            if (lastCall && now < (lastCall + interval) ) {
+                // if we are inside the interval we wait
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(function () {
+                    lastCall = now;
+                    fn.call();
+                }, interval - (now - lastCall) );
+            } else {
+                // otherwise, we directly call the function 
+                lastCall = now;
+                fn.call();
+            }
+        };
+    }
+
+    function highlightNavigation() {
+        // get the current vertical position of the scroll bar
+        var scrollPosition = $(window).scrollTop();
+
+        // iterate the sections
+        $sections.each(function() {
+            var currentSection = $(this);
+            // get the position of the section
+            var sectionTop = currentSection.offset().top;
+
+            // if the user has scrolled over the top of the section  
+            if (scrollPosition >= sectionTop) {
+                // get the section id
+                var id = currentSection.attr('id');
+                // get the corresponding navigation link
+                var $navigationLink = sectionIdTonavigationLink[id];
+                // if the link is not active
+                if (!$navigationLink.hasClass('active-side')) {
+                    // remove .active class from all the links
+                    $navigationLinks.removeClass('active-side');
+                    // add .active class to the current link
+                    $navigationLink.addClass('active-side');
+                }
+                // we have found our section, so we return false to exit the each loop
+                return false;
+            }
+        });
+    }
+
+    $(window).scroll(highlightNavigation);
+
+    /*
+    // Change sidebar on link click
+    $(document).ready(function () {
+
+        $('div.sticky-top aside.sidenav li.nav-item a')
+                .click(function (e) {
+            $('div.sticky-top aside.sidenav li.nav-item a')
+                .removeClass('active-side');
+            $(this).addClass('active-side');
+        });
+    });
+    */
+
+    // Determine current section on page load
+    $(document).ready(function () {
+      highlightNavigation();
+    });
+
   </script>
 </body>
 </html>

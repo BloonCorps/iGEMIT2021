@@ -232,3 +232,8 @@ hr {
     width: calc(100% - 200px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
