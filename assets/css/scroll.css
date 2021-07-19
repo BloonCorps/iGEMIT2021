@@ -102,17 +102,19 @@ header.is-visible {
   background-color: #f2edeb;
 }
 
+/*
 #transition {
   height: 200px;
   background-image: linear-gradient(#f2edeb, transparent);
   background-color: #e3beb1;
 }
+*/
 
 #section1 {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   padding-top: 20px;
   font-weight: 300;
 }
@@ -121,15 +123,16 @@ header.is-visible {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
 #section3 {
-  background-color: #e3beb1;
+  background-color: #6E352C;
+  color: #f2edeb;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
@@ -137,7 +140,7 @@ header.is-visible {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
@@ -145,15 +148,15 @@ header.is-visible {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
 #section6 {
-  background-color: #e3beb1;
+  background-color: #f2edeb;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
@@ -161,7 +164,7 @@ header.is-visible {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
@@ -169,34 +172,32 @@ header.is-visible {
   background-color: #e3beb1;
   font-size: 25px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
 #section9 {
   background-color: #e3beb1;
   font-size: 25px;
-  margin: 10px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
 #section10 {
   background-color: #e3beb1;
   font-size: 25px;
-  margin: 10px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
 
 #section11 {
-  background-color: #e3beb1;
+  background-color: #f2edeb;
   font-size: 25px;
-  margin: 10px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-weight: 300;
 }
+
 
